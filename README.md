@@ -1,14 +1,6 @@
-# MiniPerplx
+# Roogle
 
-![MiniPerplx](/app/opengraph-image.png)
-
-A minimalistic AI-powered search engine that helps you find information on the internet.
-
-## ProductHunt Launch
-
-Upvote MiniPerplx on ProductHunt to show your support!
-
-<a href="https://www.producthunt.com/posts/miniperplx?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-miniperplx" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=481378&theme=light" alt="MiniPerplx - A&#0032;minimalistic&#0032;AI&#0045;powered&#0032;search&#0032;engine&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+A community owned search engine, forked from [MiniPerplx](https://github.com/zaidmukaddam/miniperplx).
 
 ## Features
 
@@ -47,35 +39,24 @@ Upvote MiniPerplx on ProductHunt to show your support!
 
 ### Deploy your own
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzaidmukaddam%2Fminiperplx&env=XAI_API_KEY,GROQ_API_KEY,TAVILY_API_KEY,OPENWEATHER_API_KEY,E2B_API_KEY&envDescription=API%20keys%20needed%20for%20application)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FWimbledton%2Froogle&env=XAI_API_KEY,GROQ_API_KEY,TAVILY_API_KEY,OPENWEATHER_API_KEY,E2B_API_KEY&envDescription=API%20keys%20needed%20for%20application)
 
-## Set MiniPerplx as your default search engine
+## Set Roogle as your default search engine
 
-1. **Open the Chrome browser settings**:
-   - Click on the three vertical dots in the upper right corner of the browser.
-   - Select "Settings" from the dropdown menu.
+1. **Open your browser settings**:
+   - For Chrome: Click the three dots menu → Settings
+   - For Firefox: Click the menu button → Settings
+   - For Edge: Click the three dots menu → Settings
 
-2. **Go to the search engine settings**:
-   - In the left sidebar, click on "Search engine."
-   - Then select "Manage search engines and site search."
+2. **Navigate to search engine settings**:
+   - Chrome: Search engine → Manage search engines
+   - Firefox: Search → Default Search Engine → Add search engine
+   - Edge: Privacy, search, and services → Address bar and search
 
-3. **Add a new search engine**:
-   - Click on "Add" next to "Site search."
-
-4. **Set the search engine name**:
-   - Enter `MiniPerplx` in the "Search engine" field.
-
-5. **Set the search engine URL**:
-   - Enter `https://mplx.run?q=%s` in the "URL with %s in place of query" field.
-
-6. **Set the search engine shortcut**:
-   - Enter `mp` in the "Shortcut" field.
-
-7. **Set Default**:
-   - Click on the three dots next to the search engine you just added.
-   - Select "Make default" from the dropdown menu.
-
-After completing these steps, you should be able to use MiniPerplx as your default search engine in Chrome.
+3. **Add Roogle**:
+   - Search engine: `Roogle`
+   - Keyword: `rg`
+   - URL: `https://your-deployment-url.com/search?q=%s`
 
 ### Local development
 
@@ -89,4 +70,4 @@ To run the example locally you need to:
 
 # License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 

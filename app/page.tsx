@@ -756,15 +756,11 @@ const HomeContent = () => {
     const changelogs: Changelog[] = [
         {
             id: "1",
-            title: "The Unexpected Collab",
+            title: "",
             images: [
-                "https://metwm7frkvew6tn1.public.blob.vercel-storage.com/mplx-changelogs/mplx-collab.jpeg", 
+                "", 
             ],
             content: `
-## **MiniPerplx x Vercel x xAI Collab**
-
-Excited to annouce that MiniPerplx has partnered with Vercel and xAI to bring you the best of AI search experience. 
-Grok 2 models are now available for you to try out.
 `
         }
     ];
@@ -2571,7 +2567,9 @@ Grok 2 models are now available for you to try out.
             <div className={`w-full max-w-[90%] sm:max-w-2xl space-y-6 p-0 ${hasSubmitted ? 'mt-16 sm:mt-20' : 'mt-[30vh] sm:mt-[35vh]'}`}>
                 {!hasSubmitted && (
                     <div className="text-center mb-8">
-                        <h1 className="text-5xl sm:text-7xl mb-12 text-neutral-800 dark:text-neutral-100 font-serif tracking-tight">Loogle</h1>
+                        <h1 className="text-5xl sm:text-7xl mb-12 text-neutral-800 dark:text-neutral-100 tracking-tight font-sans font-black">
+                            Roogle
+                        </h1>
                     </div>
                 )}
 
@@ -2779,7 +2777,7 @@ Grok 2 models are now available for you to try out.
                         className="flex flex-row justify-between items-center w-full max-w-2xl bottom-3 fixed p-4 sm:p-auto"
                     >
                         <div className="text-sm text-neutral-500 dark:text-neutral-400">
-                            © {new Date().getFullYear()} Loogle
+                            © {new Date().getFullYear()} Roogle
                         </div>
                         <div className="flex items-center space-x-4">
                             <Button 
@@ -2808,8 +2806,8 @@ Grok 2 models are now available for you to try out.
 const LoadingFallback = () => (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
         <div className="text-center space-y-4">
-            <h1 className="text-4xl sm:text-6xl mb-1 text-neutral-800 dark:text-neutral-100 font-serif animate-pulse">
-                Loogle
+            <h1 className="text-4xl sm:text-6xl mb-1 text-neutral-800 dark:text-neutral-100 font-sans font-black animate-pulse">
+                Roogle
             </h1>
             <p className="text-xl sm:text-2xl font-serif text-neutral-600 dark:text-neutral-400 animate-pulse">
                 Loading your minimalist AI experience...
