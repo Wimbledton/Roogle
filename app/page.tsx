@@ -2407,32 +2407,6 @@ Grok 2 models are now available for you to try out.
                     </Button>
                 </Link>
                 <div className='flex items-center space-x-4'>
-                    <Link
-                        target="_blank"
-                        href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzaidmukaddam%2Fminiperplx&env=XAI_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN,AVIATION_STACK_API_KEY,SANDBOX_TEMPLATE_ID,TMDB_API_KEY,NEXT_PUBLIC_POSTHOG_KEY,NEXT_PUBLIC_POSTHOG_HOST,YT_ENDPOINT,EXA_API_KEY,TRIPADVISOR_API_KEY,BLOB_READ_WRITE_TOKEN,ELEVENLABS_API_KEY,AZURE_TRANSLATOR_LOCATION,AZURE_TRANSLATOR_KEY,AZURE_RESOURCE_NAME,AZURE_API_KEY,MAPBOX_ACCESS_TOKEN,NEXT_PUBLIC_MAPBOX_TOKEN,FIRECRAWL_API_KEY,TAVILY_API_KEY,OPENWEATHER_API_KEY,E2B_API_KEY,GOOGLE_MAPS_API_KEY,NEXT_PUBLIC_GOOGLE_MAPS_API_KEY&envDescription=All%20environment%20variables%20needed%20for%20application"
-                        className="flex flex-row gap-2 items-center py-1.5 px-2 rounded-md text-neutral-950 bg-neutral-50 hover:bg-neutral-100 dark:bg-neutral-900 dark:text-zinc-50 dark:hover:bg-neutral-800 dark:shadow-sm shadow-none text-sm"
-                    >
-                        <VercelIcon size={14} />
-                        <span className='hidden sm:block'>Deploy with Vercel</span>
-                        <span className='sm:hidden block'>Deploy</span>
-                    </Link>
-                    <TooltipProvider>
-                        <Tooltip>
-                            <TooltipTrigger asChild>
-                                <Button
-                                    size="sm"
-                                    onClick={() => window.open("https://github.com/sponsors/zaidmukaddam", "_blank")}
-                                    className="flex items-center space-x-2 bg-red-100 dark:bg-red-900 shadow-none hover:bg-red-200 dark:hover:bg-red-800"
-                                >
-                                    <Heart className="h-4 w-4 text-red-500 dark:text-red-400" />
-                                    <span className="text-red-800 dark:text-red-200">Sponsor</span>
-                                </Button>
-                            </TooltipTrigger>
-                            <TooltipContent className="bg-white dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">
-                                <p>Sponsor this project on GitHub</p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </TooltipProvider>
                     <ThemeToggle />
                 </div>
             </div>
@@ -2594,57 +2568,10 @@ Grok 2 models are now available for you to try out.
         <div className="flex flex-col font-sans items-center justify-center p-2 sm:p-4 bg-background text-foreground transition-all duration-500">
             <Navbar />
 
-            <div className={`w-full max-w-[90%] sm:max-w-2xl space-y-6 p-0 ${hasSubmitted ? 'mt-16 sm:mt-20' : 'mt-[20vh] sm:mt-[25vh]'}`}>
+            <div className={`w-full max-w-[90%] sm:max-w-2xl space-y-6 p-0 ${hasSubmitted ? 'mt-16 sm:mt-20' : 'mt-[30vh] sm:mt-[35vh]'}`}>
                 {!hasSubmitted && (
-                    <div className="text-center">
-                        <Badge
-                            onClick={() => setOpenChangelog(true)}
-                            className="cursor-pointer gap-1 mb-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200"
-                            variant="secondary"
-                        >
-                            <Flame size={14} /> What&apos;s new
-                        </Badge>
-                        <h1 className="text-4xl sm:text-6xl mb-1 text-neutral-800 dark:text-neutral-100 font-serif">MiniPerplx</h1>
-                        <h2 className='text-xl sm:text-2xl font-serif text-balance text-center mb-2 text-neutral-600 dark:text-neutral-400'>
-                            In search for minimalism and simplicity
-                        </h2>
-                        <div className="flex flex-row items-center gap-1 justify-center text-center mx-auto !p-0 !m-0">
-                            <span className="text-base text-neutral-500 dark:text-neutral-400">
-                                Powered by
-                            </span>
-                            <div className="flex flex-wrap gap-1 items-center justify-center">
-                                <a
-                                    href="https://vercel.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="no-underline"
-                                >
-                                    <Badge
-                                        variant="secondary"
-                                        className="bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-full transition-colors shadow-none"
-                                    >
-                                        <VercelIcon size={10} />
-                                        <span className="ml-2 text-sm">Vercel</span>
-                                    </Badge>
-                                </a>
-                                {/* span with a + */}
-                                <span className="text-neutral-500 dark:text-neutral-400">+</span>
-                                <a
-                                    href="https://x.ai/api"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="no-underline"
-                                >
-                                    <Badge
-                                        variant="secondary"
-                                        className="bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors rounded-full shadow-none"
-                                    >
-                                        <XAIIcon size={12} />
-                                        <span className="ml-2 text-sm">xAI Grok</span>
-                                    </Badge>
-                                </a>
-                            </div>
-                        </div>
+                    <div className="text-center mb-8">
+                        <h1 className="text-5xl sm:text-7xl mb-12 text-neutral-800 dark:text-neutral-100 font-serif tracking-tight">MiniPerplx</h1>
                     </div>
                 )}
 
@@ -2854,27 +2781,13 @@ Grok 2 models are now available for you to try out.
                         <div className="text-sm text-neutral-500 dark:text-neutral-400">
                             © {new Date().getFullYear()} MiniPerplx
                         </div>
-                        <Tooltip delayDuration={100}>
-                            <TooltipTrigger>
-                                <a
-                                    href="https://x.com/zaidmukaddam"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-sm hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors text-neutral-600 dark:text-neutral-400"
-                                >
-                                    @zaidmukaddam
-                                </a>
-                            </TooltipTrigger>
-                            <TooltipContent
-                                side="top"
-                                sideOffset={5}
-                                className="bg-neutral-800 dark:bg-neutral-900 text-neutral-100 px-3 py-2 text-xs font-medium rounded-xl shadow-lg border border-neutral-700/50"
-                            >
-                                <p className="flex items-center gap-1.5">
-                                    <span className='flex gap-1'>Follow me on <XLogo className='size-4' /></span>
-                                </p>
-                            </TooltipContent>
-                        </Tooltip>
+                        <Link
+                            target="_blank"
+                            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzaidmukaddam%2Fminiperplx&env=XAI_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN,AVIATION_STACK_API_KEY,SANDBOX_TEMPLATE_ID,TMDB_API_KEY,NEXT_PUBLIC_POSTHOG_KEY,NEXT_PUBLIC_POSTHOG_HOST,YT_ENDPOINT,EXA_API_KEY,TRIPADVISOR_API_KEY,BLOB_READ_WRITE_TOKEN,ELEVENLABS_API_KEY,AZURE_TRANSLATOR_LOCATION,AZURE_TRANSLATOR_KEY,AZURE_RESOURCE_NAME,AZURE_API_KEY,MAPBOX_ACCESS_TOKEN,NEXT_PUBLIC_MAPBOX_TOKEN,FIRECRAWL_API_KEY,TAVILY_API_KEY,OPENWEATHER_API_KEY,E2B_API_KEY,GOOGLE_MAPS_API_KEY,NEXT_PUBLIC_GOOGLE_MAPS_API_KEY&envDescription=All%20environment%20variables%20needed%20for%20application"
+                            className="text-sm text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 transition-colors"
+                        >
+                            Deploy with Vercel
+                        </Link>
                     </motion.footer>
                 </TooltipProvider>
             )}
