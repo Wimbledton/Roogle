@@ -2571,7 +2571,7 @@ Grok 2 models are now available for you to try out.
             <div className={`w-full max-w-[90%] sm:max-w-2xl space-y-6 p-0 ${hasSubmitted ? 'mt-16 sm:mt-20' : 'mt-[30vh] sm:mt-[35vh]'}`}>
                 {!hasSubmitted && (
                     <div className="text-center mb-8">
-                        <h1 className="text-5xl sm:text-7xl mb-12 text-neutral-800 dark:text-neutral-100 font-serif tracking-tight">MiniPerplx</h1>
+                        <h1 className="text-5xl sm:text-7xl mb-12 text-neutral-800 dark:text-neutral-100 font-serif tracking-tight">Loogle</h1>
                     </div>
                 )}
 
@@ -2779,15 +2779,24 @@ Grok 2 models are now available for you to try out.
                         className="flex flex-row justify-between items-center w-full max-w-2xl bottom-3 fixed p-4 sm:p-auto"
                     >
                         <div className="text-sm text-neutral-500 dark:text-neutral-400">
-                            © {new Date().getFullYear()} MiniPerplx
+                            © {new Date().getFullYear()} Loogle
                         </div>
-                        <Link
-                            target="_blank"
-                            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzaidmukaddam%2Fminiperplx&env=XAI_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN,AVIATION_STACK_API_KEY,SANDBOX_TEMPLATE_ID,TMDB_API_KEY,NEXT_PUBLIC_POSTHOG_KEY,NEXT_PUBLIC_POSTHOG_HOST,YT_ENDPOINT,EXA_API_KEY,TRIPADVISOR_API_KEY,BLOB_READ_WRITE_TOKEN,ELEVENLABS_API_KEY,AZURE_TRANSLATOR_LOCATION,AZURE_TRANSLATOR_KEY,AZURE_RESOURCE_NAME,AZURE_API_KEY,MAPBOX_ACCESS_TOKEN,NEXT_PUBLIC_MAPBOX_TOKEN,FIRECRAWL_API_KEY,TAVILY_API_KEY,OPENWEATHER_API_KEY,E2B_API_KEY,GOOGLE_MAPS_API_KEY,NEXT_PUBLIC_GOOGLE_MAPS_API_KEY&envDescription=All%20environment%20variables%20needed%20for%20application"
-                            className="text-sm text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 transition-colors"
-                        >
-                            Deploy with Vercel
-                        </Link>
+                        <div className="flex items-center space-x-4">
+                            <Button 
+                                variant="ghost" 
+                                disabled 
+                                className="text-sm text-neutral-400 dark:text-neutral-600 cursor-not-allowed"
+                            >
+                                Community Servers
+                            </Button>
+                            <Link
+                                target="_blank"
+                                href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzaidmukaddam%2Fminiperplx&env=XAI_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN,AVIATION_STACK_API_KEY,SANDBOX_TEMPLATE_ID,TMDB_API_KEY,NEXT_PUBLIC_POSTHOG_KEY,NEXT_PUBLIC_POSTHOG_HOST,YT_ENDPOINT,EXA_API_KEY,TRIPADVISOR_API_KEY,BLOB_READ_WRITE_TOKEN,ELEVENLABS_API_KEY,AZURE_TRANSLATOR_LOCATION,AZURE_TRANSLATOR_KEY,AZURE_RESOURCE_NAME,AZURE_API_KEY,MAPBOX_ACCESS_TOKEN,NEXT_PUBLIC_MAPBOX_TOKEN,FIRECRAWL_API_KEY,TAVILY_API_KEY,OPENWEATHER_API_KEY,E2B_API_KEY,GOOGLE_MAPS_API_KEY,NEXT_PUBLIC_GOOGLE_MAPS_API_KEY&envDescription=All%20environment%20variables%20needed%20for%20application"
+                                className="text-sm text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 transition-colors"
+                            >
+                                Deploy with Vercel
+                            </Link>
+                        </div>
                     </motion.footer>
                 </TooltipProvider>
             )}
@@ -2800,7 +2809,7 @@ const LoadingFallback = () => (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
         <div className="text-center space-y-4">
             <h1 className="text-4xl sm:text-6xl mb-1 text-neutral-800 dark:text-neutral-100 font-serif animate-pulse">
-                MiniPerplx
+                Loogle
             </h1>
             <p className="text-xl sm:text-2xl font-serif text-neutral-600 dark:text-neutral-400 animate-pulse">
                 Loading your minimalist AI experience...
